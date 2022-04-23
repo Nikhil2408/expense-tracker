@@ -8,12 +8,14 @@ function Expense(props){
     const date = props.expense.date.getDate();
     return (
         <div className="Expense">
-            <div className="Expense-date">
-                <p>{year}</p>
-                <p>{month}</p>
-                <p>{date}</p>
+            <div className="Expense-date-title">
+                <div className="Expense-date">
+                    <p>{year}</p>
+                    <p>{month}</p>
+                    <p>{date}</p>
+                </div>
+                <h2>{props.expense.title}</h2>
             </div>
-            <h2>{props.expense.title}</h2>
             <h2>Rs. {props.expense.amount}</h2>
         </div>
     );

@@ -2,10 +2,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1rem 2rem;
-    padding: 0.5rem 2rem;
+    margin: 1rem 0rem;
+    padding: 0.5rem 1rem;
     background-color: rgb(86, 131, 131);
     border-radius: 10px;
+}
+
+.Expense-date-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Expense-date{
@@ -18,5 +24,4 @@
     margin: 0.5rem;
     border-radius: 20px;
     color: white;
-
 }
