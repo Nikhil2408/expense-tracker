@@ -1,0 +1,22 @@
+.Expense{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 2rem;
+    padding: 0.5rem 2rem;
+    background-color: rgb(86, 131, 131);
+    border-radius: 10px;
+}
+
+.Expense-date{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    border-radius: 20px;
+    color: white;
+
+}
