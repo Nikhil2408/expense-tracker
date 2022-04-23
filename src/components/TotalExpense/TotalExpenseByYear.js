@@ -11,7 +11,7 @@ function TotalExpenseByYear(props){
     }
     return (
         <div className="TotalExpenseByYear">
-            <h2 className="TotalExpenseByYear-header">The Total Expense: {amount}</h2>
+            <h2 className="TotalExpenseByYear-header">The Total Expense: Rs. {amount}</h2>
         </div>
     )
 }
