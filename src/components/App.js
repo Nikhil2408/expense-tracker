@@ -27,7 +27,7 @@ function App() {
     let filtered;
     if(filterYear !== "noYear" && filterYear !== "all"){
         filtered = allExpenses.allExpenses.filter(expense => {
-          return parseInt(filterYear) == expense.date.getFullYear();
+          return parseInt(filterYear) === expense.date.getFullYear();
         });
     }
     else if(filterYear === "all"){
