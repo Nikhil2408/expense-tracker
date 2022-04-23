@@ -3,11 +3,12 @@ import React, { useState } from "react";
 import ExpenseForm from "./ExpenseFormComponent/ExpenseForm";
 import Expenses from "./Expenses/Expenses";
 import ExpenseFilter from "./ExpenseFilter/ExpenseFilter";
+import TotalExpenseByYear from "./TotalExpense/TotalExpenseByYear";
 import '../styles/App.css';
 
 
 function App() {
-  
+
   const [allExpenses, setAllExpenses] = useState({
     allExpenses : []
   });
@@ -20,7 +21,7 @@ function App() {
         return {
           allExpenses : [...currentState.allExpenses, newExpense]
         }
-    })
+    });
   }
 
   function filterAllExpenses(filterYear){
@@ -47,6 +48,7 @@ function App() {
       <ExpenseForm addExpense = {addExpense}/>
       <ExpenseFilter filterAllExpenses = {filterAllExpenses}/>
       <Expenses allExpenses = {filterExpenses.filterExpenses}/>
+      <TotalExpenseByYear allExpenses = {filterExpenses.filterExpenses} />
     </div>
   );
 }
