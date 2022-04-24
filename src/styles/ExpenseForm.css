@@ -38,3 +38,18 @@
     background-color: brown;
     color: white;
 }
+
+.ExpenseForm-addNewExpenseBtn{
+    margin: 1.5rem auto;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 20px;
+    width: 200px;
+    padding: 0.5rem 0.2rem;
+    cursor: pointer;
+}
+
+.ExpenseForm-addNewExpenseBtn:hover{
+    background-color: brown;
+    color: white;
+}

@@ -7,7 +7,8 @@ function ExpenseForm(props){
     let [userInput, setUserInput] = useState({
         title: "",
         amount: "",
-        date: ""
+        date: "",
+        addExpenseBtn: false
     });
 
     function changeHandler(eventObj){
@@ -30,11 +31,31 @@ function ExpenseForm(props){
             setUserInput({
                 title: "",
                 amount: "",
-                date: ""
+                date: "",
+                addExpenseBtn: false
             })
         }
-
     }
+
+    function clickHandler(){
+        setUserInput(function(currentState){
+            return {
+                ...currentState,
+                addExpenseBtn: true
+            }
+        })
+    }
+
+    if(userInput.title === "" 
+    && userInput.amount === "" 
+    && userInput.date === "" 
+    && userInput.addExpenseBtn === false){
+        return (
+            <div>
+                <button className="ExpenseForm-addNewExpenseBtn" onClick={clickHandler}>Add New Expense</button>
+            </div>
+        )
+    }  
 
     return (
         <div className="ExpenseForm">
