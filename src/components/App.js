@@ -15,7 +15,7 @@ function App() {
   function addExpense(newExpense){
     setAllExpenses(function(currentState){
         return {
-          allExpenses : [...currentState.allExpenses, newExpense]
+          allExpenses : [newExpense, ...currentState.allExpenses]
         }
     });
   }
