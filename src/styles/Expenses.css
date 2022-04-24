@@ -2,3 +2,9 @@
     height: fit-content;
     width: 90%;
 }
+
+.Expenses-noExpense{
+    color: white;
+    text-align: center;
+    margin: 2rem 1rem;
+}

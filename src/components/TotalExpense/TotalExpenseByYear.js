@@ -4,8 +4,8 @@ import "../../styles/TotalExpenseByYear.css";
 
 function TotalExpenseByYear(props){
     let amount = 0;
-    if(props.allExpenses.length > 0){
-        props.allExpenses.forEach(expense => {
+    if(props.filteredExpenses.length > 0){
+        props.filteredExpenses.forEach(expense => {
             amount+=parseInt(expense.amount);
         })
     }
