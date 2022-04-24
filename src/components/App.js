@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 import ExpenseForm from "./ExpenseFormComponent/ExpenseForm";
 import Expenses from "./Expenses/Expenses";
-// import TotalExpenseByYear from "./TotalExpense/TotalExpenseByYear";
 import '../styles/App.css';
 
 
@@ -25,7 +24,6 @@ function App() {
       <h1 className = "App-header">Expense Tracker</h1>
       <ExpenseForm addExpense = {addExpense}/>
       <Expenses allExpenses = {allExpenses.allExpenses}/>
-      {/* <TotalExpenseByYear allExpenses = {filterExpenses.filterExpenses} /> */}
     </div>
   );
 }
